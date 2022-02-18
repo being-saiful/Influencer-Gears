@@ -6,12 +6,12 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FFFFFF;
 }
 
 /*-- header style --*/
@@ -21,12 +21,12 @@ main{
 }
 .top-part{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-
+    justify-content: center;
+    padding-left: 15px;
 }
 .menu-bar{
     margin-left: auto;
+    padding-left: 50px;
 }
 .menu-bar a{
     text-decoration: none;
@@ -42,29 +42,33 @@ main{
 .journey-title h1{
     font-size: 52px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 .journey-title p{
     font-size: 16px;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 .banner img{
     margin-left: 36px;
 }
-.journey-part-button a{
+.journey-title a{
     text-decoration: none;
     font-size: 16px;
     color: white;
 }
-.journey-part-button{
+.journey-area-button{
     padding: 10px 40px;
     background-color: #E02C6D;
-    border-radius: 7px;
+    border-radius: 40px;
     border: none;
 }
 .fa-arrow-right{
     margin-left: 5px;
 }
 
-/*-- complany logo styles --*/
+/*-- company logo styles --*/
 
 .all-company-logos{
     display: flex;
@@ -83,7 +87,7 @@ main{
     column-gap: 10px;
 }
 .item{
-    height: 470px;
+    height: 500px;
     width: 330px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -93,4 +97,54 @@ main{
     margin-left: 4.5%;
     margin-top: 4.5%;
 }
+.item img{
+    margin-bottom: 1%;
+}
+.rating{
+    margin-top: 1%;
+    padding-left: 15px;
+    color: #FB8200;
+}
+#black{
+    color: black;
+}
+.item h4, h6{
+    margin-bottom: 1%;
+}
+.item h4{
+    font-size: 28px;
+}
+.item h6{
+    font-size: 24px;
+    font-weight: 400;
+}
+.popular-collection-button{
+    float: right;
+    margin-top: 35px;
+}
+.popular-collection-button a{
+    text-decoration: none;
+    color: #E02C6D;
+}
 
+/*-- featured products area styles --*/
+
+.featured-product-section{
+    display: flex;
+    align-items: flex-end;    
+}
+.featured-banner img{
+    padding-left: 25%;
+    margin-right: 10px;
+}
+
+/*-- footer styles --*/
+
+footer{
+    width: 1440px;
+    height: 239px;
+    background-color: #0A0826;
+}
+footer h3,p{
+    color: white;
+}
