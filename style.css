@@ -86,6 +86,12 @@ main{
 
 /*-- popular collection styles --*/
 
+.popular-collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -190,4 +196,26 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+/*-- media queries --*/
+
+@media only screen and (max-width: 688px) {
+    main{
+        width: 100%;
+    }
+    .journey-part, .all-company-logos, .popular-collection, .top-part, .featured-product-section, .footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-collection, .featured-product-section{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .popular-collection{
+        width: 100%;
+    }
+    .popular-collection, .featured-product-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
