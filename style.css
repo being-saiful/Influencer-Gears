@@ -22,6 +22,7 @@ main{
 .top-part{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-left: 15px;
 }
 .menu-bar{
@@ -72,10 +73,15 @@ main{
 
 .all-company-logos{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .company-logo{
     padding-left: 50px;
     padding-top: 10px;
+}
+#first-child{
+    padding-left: 0px;
 }
 
 /*-- popular collection styles --*/
@@ -127,24 +133,61 @@ main{
     color: #E02C6D;
 }
 
-/*-- featured products area styles --*/
+ /*-- featured products area styles --*/
 
-.featured-product-section{
-    display: flex;
-    align-items: flex-end;    
-}
-.featured-banner img{
-    padding-left: 25%;
-    margin-right: 10px;
+.featured-product-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
 }
 
+.featured-product-section img {
+  margin-right: 10px;
+}
+.featured-texts {
+  width: 40%;
+}
+.featured-texts p {
+  color: black !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.featured-texts a {
+  text-decoration: none;
+  background-color: #ff0054;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 40px !important;
+  color: white;
+}
 /*-- footer styles --*/
 
-footer{
-    width: 1440px;
-    height: 239px;
-    background-color: #0A0826;
+footer {
+  width: 100%;
+  height: 239px;
+  background-color: #0a0826;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
-footer h3,p{
-    color: white;
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.social-network-links {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
